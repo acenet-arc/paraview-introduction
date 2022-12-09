@@ -11,7 +11,7 @@ FIXME: home page introduction
 
 > ## Prerequisites
 >
-> HPC and Visualization for Managers by ACE-NET.
+> HPC and Visualization for Managers by ACENET.
 {: .prereq}
 
 {% include links.md %}
