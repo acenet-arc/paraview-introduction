@@ -6,8 +6,10 @@
 
 {% if site.kind == "lesson" %}
 <h1 class="maintitle"><a href="{{ relative_root_path }}{% link index.md %}">{{ site.title }}</a>{% if page.title %}: {{ page.title }}{% endif %}</h1>
-
-{% else %}
+{% if site.carpentry == "an" %}
+<hr>
+{% endif %}
+ {% else %}
 
 <h1 class="maintitle">{{ page.title }}</h1>
 

@@ -53,7 +53,7 @@ kind: "lesson"
 repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
-email: "team@carpentries.org"
+email: "angus.creech@ace-net.ca"
 
 # Sites.
 coc: "https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html"

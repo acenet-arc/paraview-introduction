@@ -14,10 +14,10 @@
 # alliance: Digital Research Alliance of Canada
 # molmodsim: Compute Canada Molecular Simulation Team 
 # bst: (compatibility) same as `molmodsim`
-carpentry: "swc"
+carpentry: "an"
 
 # Overall title for pages.
-title: "Lesson Title"
+title: "Hands-on with Paraview"
 
 # Life cycle stage of the lesson
 # See this page for more details: https://cdh.carpentries.org/the-lesson-life-cycle.html
@@ -29,7 +29,7 @@ title: "Lesson Title"
 # 'transition-step-2': notice encouraging to use new version
 # 'transition-step-3': notice indicating the lesson is deprecated,
 #                      with automated redirect
-life_cycle: "pre-alpha"
+life_cycle: "stable"
 
 # For lessons in the life stages in 'transition-step-1' or later:
 # - 'transition_url' holds the URL for the version of the lesson that
@@ -53,7 +53,7 @@ kind: "lesson"
 repository: <USERNAME>/<PROJECT>
 
 # Email address, no mailto:
-email: "team@carpentries.org"
+email: "angus.creech@ace-net.ca"
 
 # Sites.
 coc: "https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html"
