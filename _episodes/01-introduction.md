@@ -11,11 +11,26 @@ keypoints:
 - "It loads in structured and unstructured 3D datasets of scalar and vector data."
 - "It is available for Windows, MacOS and Linux"
 ---
-Paraview is an open-source science/data visualization package developed by
-<a href="https://www.kitware.com">Kitware</a> that is designed for use within
-many domains, including engineering, computational fluid dynamics, medical
+
+## In one sentence
+
+Paraview is an open-source science/data visualization and data analysis
+package developed by <a href="https://www.kitware.com">Kitware</a>, that
+is designed for interactive and batch use within many domains and
+disciplines, such as engineering, computational fluid dynamics, medical
 science, material science and sensor data.
 
-<img src="{% link fig/visualisation-process-overview.jpg %}" alt="Visualization process overview" width="50%">
+## What Paraview does
+
+Paraview can be run straight from a desktop, reading data in directly from
+storage:
+
+<img src="{% link fig/visualisation-process-overview.jpg %}" alt="Visualization process overview" width="45%">
+
+Alternatively, for very large datasets, Paraview can be run in client-server
+mode, with processing done remotely on a cluster or more powerful server
+computer, but rendered on a local desktop:
+
+<img src="{% link fig/visualisation-with-server.jpg %}" alt="Visualization process overview" width="65%">
 
 {% include links.md %}
