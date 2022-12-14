@@ -25,7 +25,7 @@ science, material science and sensor data.
 Paraview can be run straight from a desktop, reading data in directly from
 storage:
 
-<img src="{% link fig/visualisation-process-overview.jpg %}" alt="Visualization process overview" width="45%">
+![Visualization process oveview]({{ page.root }}/fig/visualisation-process-overview.jpg){: width="45%" }
 
 Alternatively, for very large datasets, Paraview can be run in client-server
 mode, with processing done remotely on a cluster or more powerful server
