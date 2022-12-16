@@ -40,7 +40,18 @@ a series of operations known as *filters* to operate on data. Filters can be
 connected in series, taking input from the previous filter's output, operate
 on it, and pass it to the next filter.
 
-![Paraview filter chain]({{ page.root }}/fig/paraview-filter-chain.jpg){: width="60%" }
+![Paraview filter chain]({{ page.root }}/fig/paraview-filter-chain.jpg){: width="55%" }
 
+You can also `branch off' the chain, with seperate filters to create multiple
+visualizations.
+
+![Paraview multiple visualizations]({{ page.root }}/fig/paraview-multiple-visualisations.jpg){: width="55%" }
+
+Each visualization appears in a seperate window frame within Paraview. What
+is particularly powerful, is that data from each can also be operated on, or
+saved individually to disc for further processing, eg. by a seperate
+application such as MatLab or a Python program.
+
+These features, and more, will be covered in this lesson.
 
 {% include links.md %}
