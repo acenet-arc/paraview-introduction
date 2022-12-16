@@ -33,4 +33,14 @@ computer, but rendered on a local desktop:
 
 ![Visualization process with processing server]({{ page.root }}/fig/visualisation-with-server.jpg){: width="65%" }
 
+## The Chain of Command
+
+One of the most powerful features in Paraview, is that it can chain together
+a series of operations known as *filters* to operate on data. Filters can be
+connected in series, taking input from the previous filter's output, operate
+on it, and pass it to the next filter.
+
+![Paraview filter chain]({{ page.root }}/fig/paraview-filter-chain.jpg){: width="60%" }
+
+
 {% include links.md %}
