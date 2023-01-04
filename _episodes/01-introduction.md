@@ -33,7 +33,8 @@ computer, but rendered on a local desktop:
 
 ![Visualization process with processing server]({{ page.root }}/fig/visualisation-with-server.jpg){: width="65%" }
 
-## The Chain of Command
+
+## Processing data with filters
 
 One of the most powerful features in Paraview, is that it can chain together
 a series of operations known as *filters* to operate on data. Filters can be
@@ -52,6 +53,25 @@ is particularly powerful, is that data from each can also be operated on, or
 saved individually to disc for further processing, eg. by a seperate
 application such as MatLab or a Python program.
 
-These features, and more, will be covered in this lesson.
+
+## Sources
+
+Sources in Paraview are sources of data, which can be operated on using
+using filters. This can be a file, or any item in the *Sources* menu, such as
+text, shapes, point or line sources.
+
+Some filters can combine sources together. This can be particularly useful in
+when restructuring data, for example.
+
+
+## Where to use Paraview
+
+Paraview can be used in many different scenarios. There are covered in 
+ACENET's presentation *High Performance Computing and Visualization: An
+Overview*, which we will briefly recap here.
+
+Paraview can be used in a variety of scientific, engineering and medical
+scenarios.
+
 
 {% include links.md %}
