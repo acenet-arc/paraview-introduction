@@ -58,10 +58,41 @@ application such as MatLab or a Python program.
 
 Sources in Paraview are sources of data, which can be operated on using
 using filters. This can be a file, or any item in the *Sources* menu, such as
-text, shapes, point or line sources.
+text, shapes, point or line sources. Some filters can combine sources
+together.This can be particularly useful in when restructuring data onto
+different grids, for example.
 
-Some filters can combine sources together. This can be particularly useful in
-when restructuring data, for example.
+
+
+
+A few examples of types of data that Paraview can use are shown below.
+
+### Structured grids 
+
+Structured grids have a regular, specified structure. Grid cells can be evenly
+spaced along the Cartesian axes, as is the case with the rectilinear uniform
+grid shown below.
+
+![Rectilinear uniform grid]({{ page.root }}/fig/grid-uniform-rectinlinear.jpg){: width="35%" }
+
+Or fitted using a cylindrical coordinate, as shown with the curvlinear
+structured grid below. Such a grid would typically be used to model a regular,
+tubular-sized domain (eg. flow through a pipe).
+
+![Curvilinear structured grid]({{ page.root }}/fig/grid-structured-curvilinear.jpg){: width="35%" }
+
+### Unstructured grids
+
+Unstructured grids have an arbitrary structure, which is completely dependent
+upon the meshing tool used to generate the mesh. They can be made up of
+arbitrarily-sized simplex shapes, eg. triangles, tetrahedra, hexahedra, or
+can be a mixture of multiple types, as shown here.
+
+![Unstructured grid]({{ page.root }}/fig/grid-unstructured.jpg){: width="35%" }
+
+Paraview can operate on all 2D, 3D meshes without difficulty. The same
+types of processing can be applied to both structured and unstructured meshes,
+as long as the file format is supported.
 
 
 ## Where to use Paraview
