@@ -89,7 +89,7 @@ mouse actions you can use to do this:
 
 - **Left click and drag** will rotate the data view about the origin.
 
-- **The mouse wheel** will allow you to zoom in and out.
+- **Scrolling the mouse wheel** will allow you to zoom in and out.
 
 - **Middle click and drag** will move the object around the render view window.
 
