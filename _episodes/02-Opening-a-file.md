@@ -73,6 +73,25 @@ list:
 
 ![Paraview file formats]({{ page.root }}/fig/paraview-file-formats.jpg){: width="65%" }
 
+<p> We are going to open one of the tutorial data files that you have unarchived onto your desktop. If we click on the *open file* icon&nbsp;<img src="{{ page.root }}/fig/paraview-open-file.jpg" height=18pt> </p>
 
-We are going to open one of the tutorial data files that you have unarchived
-onto your desktop. If we click on the *open file* icon:
+We get to the open file dialogue
+
+![Open file dialogue]({{ page.root }}/fig/paraview-open-file-dialalogue.jpg){: width="70%" }
+
+Click on **Desktop**, then **Paraview-tutorial**, then
+**whatever-example.vtk**. You should now have a view similar to this.
+
+=-=-=-= INSERT MODEL VIEW HERE =-=-=-=
+
+You can experiment with rotating and changing the view. There are several
+mouse actions you can use to do this:
+
+- **Left click and drag** will rotate the data view about the origin.
+
+- **The mouse wheel** will allow you to zoom in and out.
+
+- **Middle click and drag** will move the object around the render view window.
+
+Spend a few moments moving the object around the screen until you feel
+comfortable with mouse.
