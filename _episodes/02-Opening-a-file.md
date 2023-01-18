@@ -1,10 +1,12 @@
 ---
-title: "Opening and viewing a dataset"
+title: "Opening Paraview and viewing a dataset"
 teaching: 5
 exercises: 5
 questions:
-- "How do I open files and view data?"
+- What is the layout of the main Paraview window?
+- How do I open files and view data?
 objectives:
+- Understanding the window layout of Paraview 
 - How to open data and manipulate the view
 keypoints:
 - "Paraview supports many types of formats"
@@ -26,15 +28,51 @@ Once started, you should see the Paraview application Window:
 
 The four main sections of the application window are highlighed above.
 
+
 ### The pipeline browser
 
 This displays the processing pipeline in a tree view. Each data source will be
 a `root', with filters as seperate or connected branches. It is interactive,
-allowing you to hide or show the results of filters. This will be discussed
-later in the lesson.
+allowing you to hide or show the results of filters. You can also select
+any item on the tree and display its properties.
+
 
 ### Tabbed panels
 
+This panel has two tabs, *Properties* and *Information*, although more can be
+added. These are active for the selected item in the *Pipeline browser*.
+*Properties* allows certain basic properties of the current view displayed
+in the *Render view* to be changed; *Information* displays details about the
+current view, such as number of points, cells and bounds.
 
+
+### The render view
+
+This displays the rendered output produced by the sources and filters in
+the *Pipeline browser*. Here you can manipulate the view using the mouse.
+
+
+### The toolbar
+
+The toolbar contains icons which for a selected subgroup of actions and
+submenus. These are grouped together into file functions, animation
+functions, field options, view options, and filters. Depending on what
+part of the pipeline is selected, some of these may be disabled and grayed out.
+
+NB. The complete list of options and commands in MacOS are in the drop-down
+menus at thetop of the screen (not shown). Under Linux and Windows, these
+are at the top of the main Paraview window, above the toolbar.
 
 {% include links.md %}
+
+
+## Opening a file
+
+Paraview can import many types of data file formats. Here's a non-exhaustive
+list:
+
+![Paraview file formats]({{ page.root }}/fig/paraview-file-formats.jpg){: width="65%" }
+
+
+We are going to open one of the tutorial data files that you have unarchived
+onto your desktop. If we click on the *open file* icon:
