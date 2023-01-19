@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Paraview"
-teaching: 5
+teaching: 15
 exercises: 0
 questions:
 - "What is Paraview?"

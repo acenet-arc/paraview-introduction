@@ -1,10 +1,8 @@
 ---
 title: "Opening Paraview and viewing a dataset"
-teaching: 5
+teaching: 15
 exercises: 5
 questions:
-- What is the layout of the main Paraview window?
-- How do I open files and view data?
 objectives:
 - Understanding the window layout of Paraview 
 - How to open data and manipulate the view
@@ -75,14 +73,42 @@ list:
 
 <p> We are going to open one of the tutorial data files that you have unarchived onto your desktop. If we click on the *open file* icon&nbsp;<img src="{{ page.root }}/fig/paraview-open-file.jpg" height=18pt> </p>
 
-We get to the open file dialogue
+We get to the open file dialogue -
 
 ![Open file dialogue]({{ page.root }}/fig/paraview-open-file-dialalogue.jpg){: width="70%" }
 
-Click on **Desktop**, then **Paraview-tutorial**, then
-**whatever-example.vtk**. You should now have a view similar to this.
+Click on **Desktop**, then **acenet-paraview-tutorial**, then
+**disk_out_ref.ex2**. Click the **Apply** button, and you should now have
+a view similar to this.
 
-=-=-=-= INSERT MODEL VIEW HERE =-=-=-=
+![First Paraview example, top view]({{ page.root }}/fig/paraview-ex0-firstview.jpg){: width="80%" }
+
+## Information about the data file
+
+You can see in the **Pipeline browser** that there is one data source:
+**disk_out_ref.ex2**, the file that has been loaded in. The eye icon beside it
+can be clicked, to show/hide the view.
+
+The **Properties** panel shows you the **Blocks** available (block_1), and
+**Block Arrays** shows you the data fields available. The check marks
+beside them indicate they are enabled for processing.
+
+In the **Sets** sub-pane (you may need to scroll down with the mouse wheel)
+there are nodes and surface lists. If we deselect the block in **Block Arrays**
+we can select individual surfaces we would like to view.
+
+## Manipulating the view
+
+The first thing we can try is colour the object with a data field. In the
+tool bar, you will see a drop-down box that current contains *Solid Color*.
+There is a second menu to the right, labelled *Surface*. This is the current
+representation of the object. This can be changed to *Points*, *Surface with edges*, *Volume*, etc. if you so wish.
+
+![Select field, top view]({{ page.root }}/fig/select-field.jpg){: width="60%" }
+
+Click on it and select **v** (for velocity). This colour the cylinder and also
+add a legend on the bottom right indicating the range of values within the
+field.
 
 You can experiment with rotating and changing the view. There are several
 mouse actions you can use to do this:
@@ -93,5 +119,7 @@ mouse actions you can use to do this:
 
 - **Middle click and drag** will move the object around the render view window.
 
-Spend a few moments moving the object around the screen until you feel
-comfortable with mouse.
+Try rotating the view so you can see hole in the cylinder.
+
+![Hole in cylinder, coloured by velocity]({{ page.root }}/fig/cylinder-hole-vel-field.jpg){: width="65%" }
+

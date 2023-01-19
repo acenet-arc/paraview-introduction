@@ -1,7 +1,7 @@
 ---
 title: "Filters and what they do"
-teaching: 5
-exercises: 5
+teaching: 15
+exercises: 10
 questions:
 - "How do I filter data?"
 - "How do I chain filters together?"
