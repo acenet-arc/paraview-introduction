@@ -42,7 +42,7 @@ go into the **Common** submenu in the filters, select the **Clip** filter.
 
 ![Clip filter in submenu]({{ page.root }}/fig/submenu-clip-filter.jpg){: width="75%" }
 
-You should now see a render view similar to this.
+Click **Apply**. You should now see a render view similar to this.
 
 ![Clip filter initial view]({{ page.root }}/fig/clip-filter-initial.jpg){: width="85%" }
 
