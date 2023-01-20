@@ -27,7 +27,7 @@ data source can have multiple filters independently operating on its data.
 There are a great many filters available. Paraview categorises them in the
 **Filters** menu so you can find what you want easier.
 
-![Filters menu]({{ page.root }}/fig/filters-menu.jpg){: width="35%" }
+![Filters menu]({{ page.root }}/fig/filters-menu.jpg){: width="25%" }
 
 We will mostly dealing with those in the **Common** submenu.
 
