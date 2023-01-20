@@ -107,9 +107,47 @@ This will allow us to look at both velocity and pressure of the fluid
 side-by-side.
 
 To the right of the **RenderView1** label at the top the render pane,
-Click on the vertical split icon.
+click on the vertical split icon.
 
 ![Split render view vertically button]({{ page.root }}/fig/split-render-view-button.jpg){: width="55%" }
+
+You will see a second pane that asks you to **Create view**. Select **Render
+View. You will now have two render views in the layout / render view pane:
+
+![Split layout initial view]({{ page.root }}/fig/split-layout-initial-view.jpg){: width="85%" }
+
+The second render view is empty: this is because both filters are displaying
+in **RenderView1**, none of them are in **RenderView2**. You can also see
+that all the eye icons in the **Pipeline Browser** are faded: this is because
+**RenderView2** has been selected, but none of the filters are visible in
+that render view. If we click on the eye icon next to pressure, we
+should see that the pressure is now displayed in **RenderView2**, to the
+right of **RenderView1**.
+
+A note of caution here - each render view has its own viewing angle, viewing
+distance and field selection, so we will have to go through the steps
+we did for **RenderView1**:
+
+1. Press the **-X axis** button
+2. Change **Solid Color** in the colour selection toolbar menu to **pres**
+(pressure).
+3. (Optional) Zoom to the cylinder with the mouse scroll wheel.
+
+Which gives you this view:
+
+![Split layout pressure duplicate]({{ page.root }}/fig/split-layout-pressure-duplicate.jpg){: width="85%" }
+
+
+But hang on here - we are seeing *two* identical views of the pressure field!
+Surely something is wrong? No, not quite - this is just showing one of the
+key features of Paraview: multiple filters can be shown in multiple views
+at the same time, from different viewpoints if need be.
+
+Remember we mentioned that we can select render views? Let's try that now.
+Left click on empty space within **RenderView1**. There now be a thin dark
+blue rectangle around **RenderView1** (which was previously around the
+second render view).
+
 
 
 {% include links.md %}
