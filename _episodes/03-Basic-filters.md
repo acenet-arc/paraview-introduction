@@ -71,7 +71,7 @@ non-expert. This shows one of the many strengths of visualisation.
 
 
 But what is happening to the pressure? How would we show that? Can we show
-that alongside the velocity?
+it alongside the velocity?
 
 
 ## Multiple filters and multiple views
@@ -79,5 +79,37 @@ that alongside the velocity?
 Here we are going to do two things:
 1. Create a second filter
 2. Create a second render view to show the results of that filter
+
+
+### Creating a second filter
+
+Go into the **Filters/Common** submenu and select *Clip*, then hit the
+**Apply** buttom. You will see the following view.
+
+![Second clip initial view]({{ page.root }}/fig/second-clip-initial-view.jpg){: width="85%" }
+
+
+Notice that the colours have changed. This is because the view of the second
+clip (pressure) has obscured the first (velocity). This is what we are going
+to fix.
+
+Firstly, *Clip1* and *Clip2* are ambiguous names. Let's rename the filters
+so they cause less confusion.
+
+- Right click on *Clip1* and select **Rename**. Type `*velocity*'.
+- Right click on *Clip2* and select **Rename**. Type `*pressure*'.
+
+
+### Creating a second render view
+
+Now we will create a second render view, in which we will show the pressure.
+This will allow us to look at both velocity and pressure of the fluid
+side-by-side.
+
+To the right of the **RenderView1** label at the top the render pane,
+Click on the vertical split icon.
+
+![Split render view vertically button]({{ page.root }}/fig/split-render-view-button.jpg){: width="55%" }
+
 
 {% include links.md %}
