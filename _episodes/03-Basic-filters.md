@@ -148,6 +148,14 @@ Left click on empty space within **RenderView1**. There now be a thin dark
 blue rectangle around **RenderView1** (which was previously around the
 second render view).
 
+![Split layout RenderView1 duplicate]({{ page.root }}/fig/split-layout-rv1-duplicate.jpg){: width="100%" }
+
+We can see that both **velocity** and **pressure** are visible in
+**RenderView1**. If we select the eye icon to the left of **pressure**, it
+should fade out. We can now have two render views, showing velocity and
+pressure side-by-side.
+
+![Split layout velocity and pressure initial view]({{ page.root }}/fig/velocity-and-pressure-initial-split-view.jpg){: width="85%" }
 
 
 {% include links.md %}
