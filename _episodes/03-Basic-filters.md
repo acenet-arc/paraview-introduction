@@ -169,10 +169,10 @@ Paraview however has many good presets which you can use, and you may find
 giving different filters distinct colourmaps will make visualizations clearer.
 We will do that now.
 
-1. Click on the left render view (**RenderView1**).
-2. Select **Clip1** in the **Pipeline browser**.
-3. Select **Properties** in the tabbed panes on the left.
-4. Scroll down until you see the folder with the heart icon, and click on it.
+1\. Click on the left render view (**RenderView1**).
+2\. Select **Clip1** in the **Pipeline browser**.
+3\. Select **Properties** in the tabbed panes on the left.
+4\. Scroll down until you see the folder with the heart icon, and click on it.
 
 ![Heart folder (colourmaps)]({{ page.root }}/fig/properties-heart-folder.jpg){: width="45%" }
 
@@ -186,7 +186,7 @@ is currently selected. There are many, many more colourmaps available: if you
 select **All** instead of **Default**, the dialogue window will display
 every colourmap available.
 
-5. Once you have chosen a colourmap, click **Apply** then **Close**.
+5\. Once you have chosen a colourmap, click **Apply** then **Close**. { start=5 }
 
 You should now see that the colourmap for the velocity magnitude in
 **RenderView1** has changed.
