@@ -4,17 +4,16 @@ teaching: 20
 exercises: 10
 questions:
 - "How do I filter data?"
-- "How do I chain filters together?"
+- "Can I show multiple views?"
 objectives:
 - Attaching a filter to an opened file
 - Chaining filters together
 - Changing the order of filters
 keypoints:
-- "No matter how much he cries, no matter how much he begs, never, never feed
-him after midnight."
-- "Don't cross the streams."
-- "An Englishman, an Irishman, and a Scotsman walk into a bar. This is the
-start of a joke with cultural stereotypes."
+- Paraview can use filters to highlight specific aspects of the data
+- Multiple filters can be used on one set of data
+- Different views can be created to display different filters
+- Colourmaps tell Paraview how to colour data fields
 ---
 
 ## Overview of filters
@@ -112,7 +111,7 @@ click on the vertical split icon.
 ![Split render view vertically button]({{ page.root }}/fig/split-render-view-button.jpg){: width="55%" }
 
 You will see a second pane that asks you to **Create view**. Select **Render
-View. You will now have two render views in the layout / render view pane:
+View**. You will now have two render views in the layout / render view pane:
 
 ![Split layout initial view]({{ page.root }}/fig/split-layout-initial-view.jpg){: width="85%" }
 
@@ -156,6 +155,43 @@ should fade out. We can now have two render views, showing velocity and
 pressure side-by-side.
 
 ![Split layout velocity and pressure initial view]({{ page.root }}/fig/velocity-and-pressure-initial-split-view.jpg){: width="85%" }
+
+### Changing the colourmap
+
+Colourmaps (or colormaps!) tell Paraview how to colour the data according to
+the value. So if you have a temperature field with a colourmap defined to
+set be **red** at 30C, and **blue** at -30C, then warmer or colder temperatures
+will be coloured accordingly. Any values in between those ranges will have
+the colour interpolated between red and blue.
+
+Colourmaps can be quite sophisticated, and you can even create your own.
+Paraview however has many good presets which you can use, and you may find
+giving different filters distinct colourmaps will make visualizations clearer.
+We will do that now.
+
+1. Click on the left render view (**RenderView1**).
+2. Select **Clip1** in the **Pipeline browser**.
+3. Select **Properties** in the tabbed panes on the left.
+4. Scroll down until you see the folder with the heart icon, and click on it.
+
+![Heart folder (colourmaps)]({{ page.root }}/fig/properties-heart-folder.jpg){: width="45%" }
+
+This will give you the colourmap dialogue:
+
+![Colourmap dialogue window]({{ page.root }}/fig/colourmap-dialogue.jpg){: width="65%" }
+
+Here, the **Rainbow Desaturated** colourmap will be chosen, but of course you
+can pick any one. Note, the pull-down menu on the top-right where **Default**
+is currently selected. There are many, many more colourmaps available: if you
+select **All** instead of **Default**, the dialogue window will display
+every colourmap available.
+
+5. Once you have chosen a colourmap, click **Apply** then **Close**.
+
+You should now see that the colourmap for the velocity magnitude in
+**RenderView1** has changed.
+
+![RenderView1 new colourmap]({{ page.root }}/fig/renderview1-new-colourmap.jpg){: width="85%" }
 
 
 {% include links.md %}
