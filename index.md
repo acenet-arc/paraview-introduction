@@ -16,7 +16,7 @@ package, that can be downloaded free of charge. (For instructions, see the
 
 > ## Prerequisites
 >
-> HPC and Visualization for Managers by ACENET.
+> None
 {: .prereq}
 
 {% include links.md %}
