@@ -97,12 +97,10 @@ as long as the file format is supported.
 
 ## Where to use Paraview
 
-Paraview can be used in many different scenarios. There are covered in 
-ACENET's presentation *High Performance Computing and Visualization: An
-Overview*, which we will briefly recap here.
-
 Paraview can be used in a variety of scientific, engineering and medical
-scenarios.
+scenarios. There are covered in ACENET's presentation *High Performance
+Computing and Visualization: An Overview*, which we will briefly recap here.
+
 
 
 {% include links.md %}
