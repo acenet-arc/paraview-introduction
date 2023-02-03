@@ -1,11 +1,11 @@
 ---
-title: "Loading a session"
-teaching: 5
-exercises: 5
+title: "Resuming a session"
+teaching: 10
+exercises: 15
 questions:
 - "How do I pick up where I left off?"
 objectives:
-- Learning how to resume a session
+- Learning how to load a session
 - Moving your session to another machine
 keypoints:
 - Session states can be loaded in.
@@ -68,5 +68,29 @@ computer we are opening our files on. We select the **Load State** item
 in the **File** menu, and select *workforlater.pvsm*, then click on **Ok**.
 
 ![Load state new computer]({{ page.root }}/fig/load-state-new-pc.jpg){: width="65%" }
+
+This takes you to the **Load State Options** dialogue. Here, we are going to
+change the option. In the pull-down menu, there are three options:
+
+1. Use Files Names From State
+2. Search files under specified directory
+3. Choose File Names
+
+We will pick **Choose File Names**. You will see the dialogue has changed
+to something like this:
+
+![Load state options, choose file names dialogue]({{ page.root }}/fig/load-state-options-choose-file-names.jpg){: width="65%" }
+
+Click on the ellipsis (**...**). In the **Select File Name** dialogue,
+navigate to *Desktop/acenet-paraview-examples/somewhere-else* (or equivalent)
+and click on *disk_out_ref.ex2*, then click **OK**. Then click **OK**
+in the **Load State Options** dialogue.
+
+(Alternately, you can just type the file name in the **File Name** text box
+if you know the file's exact location.)
+
+Your session should now be loaded with the new data file. As the location of
+the data file has changed, now would be a good time to save the session state
+to a new state file.
 
 {% include links.md %}
