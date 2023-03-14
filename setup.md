@@ -36,4 +36,19 @@ prompted to drag Paraview into the Applications folder:
 Drag the Paraview icon into the Applications folder. Paraview should now be
 installed.
 
+## Getting the Paraview examples
+
+We have some example visualization files required for this lesson. You can
+download the ZIP file from <a href="https://github.com/acecreech/paraview-lesson/releases/download/v0.1/acenet-paraview-examples.zip">here</a> (96 MB).
+
+Once that is downloaded, you will need to extract them. Under MacOS, this can
+be done simply by clicking on the ZIP file. Doing so will create a directory
+called
+
+`acenet-paraview-examples/`
+
+This directorycontains all the Paraview files you will need for this lesson.
+The notes assume that you have extracted the ZIP file under **Desktop/**.
+
+
 {% include links.md %}
