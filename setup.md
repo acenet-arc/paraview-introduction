@@ -47,7 +47,7 @@ called
 
 `acenet-paraview-examples/`
 
-This directorycontains all the Paraview files you will need for this lesson.
+This directory contains all the Paraview files you will need for this lesson.
 The notes assume that you have extracted the ZIP file under **Desktop/**.
 
 
