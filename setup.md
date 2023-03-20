@@ -39,7 +39,7 @@ installed.
 ## Getting the Paraview examples
 
 We have some example visualization files required for this lesson. You can
-download the ZIP file from <a href="https://github.com/acenet-arc/paraview-introduction/releases/download/v0.1/acenet-paraview-examples.zip">here</a> (96 MB).
+download the ZIP file from <a href="https://github.com/acenet-arc/paraview-introduction/releases/download/v0.1/acenet-paraview-examples.zip">here</a> (53 MB).
 
 Once that is downloaded, you will need to extract them. Under MacOS, this can
 be done simply by clicking on the ZIP file. Doing so will create a directory
