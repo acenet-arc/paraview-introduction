@@ -1,12 +1,12 @@
 ---
-title: "Getting ahead with real data"
+title: "Introduction to working with real data"
 teaching: 15
 exercises: 20
 questions:
 - "How do I extract data from real data"
 objectives:
-- 
-- 
+- Extracting data from multidimensional data
+- Saving the data for external processing
 ---
 
 ## Introduction
@@ -151,6 +151,7 @@ beginning to end points.
 
 ## Summary
 
-Paraview can do a lot more than this.
+This is just a taste of what Paraview can do - more will be shown in the
+next section.
 
 {% include links.md %}

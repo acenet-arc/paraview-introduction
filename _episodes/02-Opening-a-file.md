@@ -2,7 +2,7 @@
 title: "Opening Paraview and viewing a dataset"
 teaching: 15
 exercises: 5
-questions:
+questions: How do I look at data?
 objectives:
 - Understanding the window layout of Paraview 
 - How to open data and manipulate the view
