@@ -12,7 +12,7 @@ keypoints:
 - "It is available for Windows, MacOS and Linux"
 ---
 
-## In one sentence
+## Summary
 
 Paraview is an open-source science/data visualization and data analysis
 package developed by <a href="https://www.kitware.com">Kitware</a>, that

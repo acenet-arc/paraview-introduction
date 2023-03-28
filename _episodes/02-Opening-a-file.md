@@ -12,6 +12,19 @@ keypoints:
 - "The mouse can be used change the view"
 ---
 
+
+> ## Before you start
+> Paraview can be extremely demanding of your computer's memory, especially
+on large data sets.
+>
+> **Please close down any unnecessary any unnecessary programs** such as web browsers and office software before proceeding.
+> If you do not, Paraview may run very slowly.
+{: .caution}
+
+
+
+
+
 ## Opening Paraview
 
 We'll start by opening Paraview. Assuming you have installed Paraview,

@@ -2,23 +2,41 @@
 title: Setup
 ---
 
+
+
 ## Downloading Paraview
 
-To download Paraview to your local machine, go to [www.paraview.org/download](https://www.paraview.org/download/). It should you a web page similar to that below.
+To download Paraview to your local machine, go to <a href="https://www.paraview.org/download" target="_blank">www.paraview.org/download</a>. It should you a web page similar to that below.
 
 <img src="fig/paraview-download.jpg" width="75%" alt="Paraview MacOS download page">
 
 The website should automatically select the correct operating system (OS) for
 you, ie. Windows, MacOS or Linux. Each OS has a slightly different installation
-procedure; we will focus upon MacOS below. 
+procedure.
 
 In the example screenshot above, we would select either of the download links
 highlighted:
 
 * Ending in `x86_64.dmg` - for Intel based Macs
 * Ending in `arm64.dmg` - for Apple Macs with M1 or M2 processors
+* Ending in `AMD64.msi` - for Windows machines
 
-Be sure you know what type of Mac you are using. 
+Windows users can install any version with AMD64 in the title. For Apple Macs,
+it is slightly more complicated - see below.
+
+
+## Which MacOS version to download?
+
+On MacOS, you will need to know which type of processor you have for Paraview.
+If you click on the Apple menu on the top left, and then click on **About
+This Mac**, you should see the following dialogue window:
+
+<img src="fig/about-this-mac.jpg" width="25%" alt="Apple menu">
+
+Next to **Chip** you can see the type of CPU highlighted. This will either
+be Intel, M1 or M2 (eg. ARM). Now you can download the appropriate version
+of Paraview listed above.
+
 
 ## Installing Paraview
 
@@ -28,13 +46,14 @@ agreement:
 
 <img src="fig/paraview-agreement.jpg" width="60%" alt="Paraview agreement">
 
-Click on 'Agree' then let the installation continue. On MacOS, you will be
+Click on 'Agree' then let the installation continue. On MacOS, you may be
 prompted to drag Paraview into the Applications folder:
 
 <img src="fig/paraview-to-applications.jpg" width="35%" alt="Paraview application folder drag">
 
 Drag the Paraview icon into the Applications folder. Paraview should now be
 installed.
+
 
 ## Getting the Paraview examples
 
