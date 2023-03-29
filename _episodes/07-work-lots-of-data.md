@@ -33,7 +33,7 @@ This involves running Paraview in what is called *client-server* mode.
 
 The diagram above shows how this works.
 
-- The user on **local desktop** hasthe desktop version of Paraview.
+- The user on **local desktop** has the desktop version of Paraview.
 - On the cluster, represented by the
 **login** and **processing** nodes on the right, the server version of
 Paraview runs.
