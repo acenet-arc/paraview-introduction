@@ -8,6 +8,7 @@ objectives:
 - "Learn how Paraview works in client-server mode"
 ---
 
+
 > ## Attention
 >
 > **This section will be a demonstration only**.
