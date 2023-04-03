@@ -12,7 +12,7 @@ keypoints:
 - "It is available for Windows, MacOS and Linux"
 ---
 
-## Summary
+## Paraview and Visualization
 
 Paraview is an open-source science/data visualization and data analysis
 package developed by <a href="https://www.kitware.com">Kitware</a>, that
@@ -20,7 +20,19 @@ is designed for interactive and batch use within many domains and
 disciplines, such as engineering, computational fluid dynamics, medical
 science, material science and sensor data.
 
-## What Paraview does
+But what is **visualization**? Visualization is a powerful tool for displaying
+at complex, multi-dimensional data in a way that is easier to understand.
+Below are some examples.
+
+![Examples of visualization]({{ page.root }}/fig/visualisation-examples.jpg){: width="95%" }
+
+Paraview is capable of doing visualizations like you can see above - in fact,
+it was used to produce some of them. With practice, you can too. This
+lesson will help you get to grips with the basics of Paraview, and set you
+on the road to creating your own visualiations.
+
+
+## How Paraview can be run
 
 Paraview can be run straight from a desktop, reading data in directly from
 storage:
