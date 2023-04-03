@@ -29,7 +29,7 @@ desktop computer.
 
 This involves running Paraview in what is called *client-server* mode.
 
-![Paraview in client-server mode]({{ page.root }}/fig/paraview-client-server.png){: width="65%" }
+![Paraview in client-server mode]({{ page.root }}/fig/paraview-client-server.png){: width="75%" }
 
 The diagram above shows how this works.
 
@@ -50,7 +50,7 @@ server process which the user connects to with their own desktop Paraview.
 On the Paraview download page, if you click on the Linux tab, you should see
 something similar to the following (may have to you scroll down slightly):
 
-![Paraview download headless]({{ page.root }}/fig/paraview-download-headless.jpg){: width="65%" }
+![Paraview download headless]({{ page.root }}/fig/paraview-download-headless.jpg){: width="90%" }
 
 By default you should go for an **osmesa** version. This does not require
 a GPU to operate. If you have a cluster with GPUs, you can try an **egl**
@@ -80,11 +80,9 @@ which will run for 3 hours and uses 40 cores.
 #SBATCH --time=3:0:0
 #SBATCH --ntasks=40
 #SBATCH --mem-per-cpu=2G
-#SBATCH --exclusive
-#SBATCH -o spara.out
-#SBATCH -e spara.err
+#SBATCH --output=para-%j.out
 
-ncores=40
+ncores=$SLURM_NTASKS
 
 portnum=5002
 paraver=5.10.1
@@ -94,7 +92,7 @@ echo "Starting Paraview headless servers on port $portnum"
 paradir=$HOME/local/paraview/ParaView-5.10.1-osmesa-MPI-Linux-Python3.9-x86_64
 parabin=$paradir/bin
 
-export LD_LIBRARY_PATH=$mesadir/lib:$paradir/lib/paraview-$paraver:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$paradir/lib/paraview-$paraver:$LD_LIBRARY_PATH
 export PATH=$parabin:$PATH
 export PYTHONPATH=$paradir/lib/paraview-$paraver/site-packages:$PYTHONPATH
 
@@ -111,10 +109,10 @@ echo "Paraview finished."
 > - In this case, we have installed Paraview under **$HOME/local/paraview/ParaView-5.10.1-osmesa-MPI-Linux-Python3.9-x86_64**. You may want to change
 **paradir** so if you install to another directory.
 > - Change **paraver** to match the version you use.
-> - If 40 cores are insufficient, you may need to change **ncores** to something
-larger
+> - If 40 cores are insufficient, you may need to change **ntasks** to something larger.
 > - If you are not using Slurm as a scheduler, you will need to change the
 formatting, and the Slurm batch directives (**#SBATCH**).
+> - If your cluster has nodes with **M** cores each, make sure **ntasks** is a multiple of **M**.
 {: .callout}
 
 We will be running on 40 cores, which is sufficient for many data sets.
@@ -165,17 +163,17 @@ scheduler has allocated your Paraview job to.
 Now we can fire up Paraview on our desktop. If you select **Connect** under
 the **File** menu, you should see this dialog:
 
-![Paraview-connect-dialog]({{ page.root }}/fig/paraview-connect-dialog.jpg){: width="45%" }
+![Paraview-connect-dialog]({{ page.root }}/fig/paraview-connect-dialog.jpg){: width="65%" }
 
 We want to click on **Add Server**. This will give the **Edit Server Configuration** dialog.
 
-![Paraview connect configuration]({{ page.root }}/fig/paraview-connect-server.jpg){: width="45%" }
+![Paraview connect configuration]({{ page.root }}/fig/paraview-connect-server.jpg){: width="55%" }
 
 Change the name to something convenient, and the port to **5002**, then click
 **Configure**. This gives a further dialog on launch options - just click
 **Save**. Now we can choose a server to connect to:
 
-![Paraview choose server dialog]({{ page.root }}/fig/paraview-choose-server.jpg){: width="45%" }
+![Paraview choose server dialog]({{ page.root }}/fig/paraview-choose-server.jpg){: width="65%" }
 
 Here, we want to select the server connection we've just created, and hit
 **Connect**. This may take a few moments.

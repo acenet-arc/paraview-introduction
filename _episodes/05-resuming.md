@@ -22,14 +22,14 @@ navigate to where the state was saved, and select the state file you want to
 load, then clock **Ok**. In this case, the state file is at
 **Desktop/acenet-paraview-examples/workforlater.pvsm**.
 
-![load state dialogue window]({{ page.root }}/fig/load-state-dialogue.jpg){: width="65%" }
+![load state dialogue window]({{ page.root }}/fig/load-state-dialogue.jpg){: width="75%" }
 
 This will give a second dialogue, named **Load State Options**. We will return
 to this later, but we can ignore it for now, as just click on **Ok**.
 
 You should now have the original session, which you saved earlier.
 
-![RenderView1 new colourmap]({{ page.root }}/fig/renderview1-new-colourmap.jpg){: width="85%" }
+![RenderView1 new colourmap]({{ page.root }}/fig/renderview1-new-colourmap.jpg){: width="95%" }
 
 You can continue using the session as you were before.
 
@@ -60,14 +60,14 @@ scratch and load in your copied session on this new system.
 We will start from scratch. Go into the **Edit** menu and select the
 **Reset Session** item.
 
-![Edit menu reset session]({{ page.root }}/fig/edit-menu-reset-session.jpg){: width="25%" }
+![Edit menu reset session]({{ page.root }}/fig/edit-menu-reset-session.jpg){: width="35%" }
 
 For this lesson, the state file and data file have been copied to
 *Desktop/acenet-paraview-examples/somewhere-else/* to simulate the new
 computer we are opening our files on. We select the **Load State** item
 in the **File** menu, and select *workforlater.pvsm*, then click on **Ok**.
 
-![Load state new computer]({{ page.root }}/fig/load-state-new-pc.jpg){: width="65%" }
+![Load state new computer]({{ page.root }}/fig/load-state-new-pc.jpg){: width="70%" }
 
 This takes you to the **Load State Options** dialogue. Here, we are going to
 change the option. In the pull-down menu, there are three options:

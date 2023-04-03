@@ -43,7 +43,7 @@ go into the **Common** submenu in the filters, select the **Clip** filter.
 
 Click **Apply**. You should now see a render view similar to this.
 
-![Clip filter initial view]({{ page.root }}/fig/clip-filter-initial.jpg){: width="85%" }
+![Clip filter initial view]({{ page.root }}/fig/clip-filter-initial.jpg){: width="95%" }
 
 Note that in the **Pipeline browser**, *disk_out_ref.ex2* has a greyed-out
 eye icon next to it, and *Clip1* - our clip filter - has a solid black
@@ -59,9 +59,9 @@ chamber. You can do this in one of two ways:
 
 ![Negative X-axis rotate]({{ page.root }}/fig/toolbar-minus-x-rotate.jpg){: width="35%" }
 
-Your view should now look similar to this.
+Which should give you this:
 
-![Chamber internal view]({{ page.root }}/fig/chamber-interal-view.jpg){: width="85%" }
+![Chamber internal view]({{ page.root }}/fig/chamber-interal-view.jpg){: width="95%" }
 
 You can see that fluid speeds up and moves around the sides of the piston,
 which is what we would expect as it moves up and down. By looking at this
@@ -85,7 +85,7 @@ Here we are going to do two things:
 Go into the **Filters/Common** submenu and select *Clip*, then hit the
 **Apply** buttom. You will see the following view.
 
-![Second clip initial view]({{ page.root }}/fig/second-clip-initial-view.jpg){: width="85%" }
+![Second clip initial view]({{ page.root }}/fig/second-clip-initial-view.jpg){: width="95%" }
 
 
 Notice that the colours have changed. This is because the view of the second
@@ -113,7 +113,7 @@ click on the vertical split icon.
 You will see a second pane that asks you to **Create view**. Select **Render
 View**. You will now have two render views in the layout / render view pane:
 
-![Split layout initial view]({{ page.root }}/fig/split-layout-initial-view.jpg){: width="85%" }
+![Split layout initial view]({{ page.root }}/fig/split-layout-initial-view.jpg){: width="95%" }
 
 The second render view is empty: this is because both filters are displaying
 in **RenderView1**, none of them are in **RenderView2**. You can also see
@@ -134,7 +134,7 @@ we did for **RenderView1**:
 
 Which gives you this view:
 
-![Split layout pressure duplicate]({{ page.root }}/fig/split-layout-pressure-duplicate.jpg){: width="85%" }
+![Split layout pressure duplicate]({{ page.root }}/fig/split-layout-pressure-duplicate.jpg){: width="95%" }
 
 
 But hang on here - we are seeing *two* identical views of the pressure field!
@@ -154,7 +154,7 @@ We can see that both **velocity** and **pressure** are visible in
 should fade out. We can now have two render views, showing velocity and
 pressure side-by-side.
 
-![Split layout velocity and pressure initial view]({{ page.root }}/fig/velocity-and-pressure-initial-split-view.jpg){: width="85%" }
+![Split layout velocity and pressure initial view]({{ page.root }}/fig/velocity-and-pressure-initial-split-view.jpg){: width="95%" }
 
 ### Changing the colourmap
 
@@ -178,7 +178,7 @@ We will do that now.
 
 This will give you the colourmap dialogue:
 
-![Colourmap dialogue window]({{ page.root }}/fig/colourmap-dialogue.jpg){: width="65%" }
+![Colourmap dialogue window]({{ page.root }}/fig/colourmap-dialogue.jpg){: width="75%" }
 
 Here, the **Rainbow Desaturated** colourmap will be chosen, but of course you
 can pick any one. Note, the pull-down menu on the top-right where **Default**
@@ -191,7 +191,7 @@ every colourmap available.
 You should now see that the colourmap for the velocity magnitude in
 **RenderView1** has changed.
 
-![RenderView1 new colourmap]({{ page.root }}/fig/renderview1-new-colourmap.jpg){: width="85%" }
+![RenderView1 new colourmap]({{ page.root }}/fig/renderview1-new-colourmap.jpg){: width="95%" }
 
 
 {% include links.md %}

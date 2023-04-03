@@ -26,13 +26,13 @@ You need to find the **File** menu and click on the **Save State** item. On
 Windows or Linux, this will be at the top of the application window, whereas
 on MacOS this will be at the top of the screen in the application menu:
 
-![File menu with save state selected]({{ page.root }}/fig/file-menu-save-state.jpg){: width="45%" }
+![File menu with save state selected]({{ page.root }}/fig/file-menu-save-state.jpg){: width="60%" }
 
 Paraview will show the save state dialogue. Here, the state file
 *workforlater.pvsm* will be saved to *Desktop/acenet-paraview-examples/*, but
 you can save the state file anywhere you like.
 
-![Save state dialogue window]({{ page.root }}/fig/save-state-dialogue.jpg){: width="65%" }
+![Save state dialogue window]({{ page.root }}/fig/save-state-dialogue.jpg){: width="75%" }
 
 Unless you get an error message, your Paraview state should now be saved.
 If you're feeling brave, you can now close Paraview.

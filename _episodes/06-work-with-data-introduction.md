@@ -25,14 +25,14 @@ You should see a wireframe box. We'll need to change the rendering to
 **Volume**. In the toolbar, you'll see a drop-down menu that currently says
 **Outline**. Select **Volume** from this menu.
 
-![MRI scan volume selected]({{ page.root }}/fig/mri-volume-selected.jpg){: width="85%" }
+![MRI scan volume selected]({{ page.root }}/fig/mri-volume-selected.jpg){: width="95%" }
 
 Zooming in a bit, you should have a view of the head clearly. Changing the
 colormap to **Rainbow Desaturated** (See the 'Introducing filters' episode,
 under *Changing the colormap*), and turning on the colormap legend, you
 should see something similar to this.
 
-![MRI with rainbow desaturated colormap]({{ page.root }}/fig/mri-colormap-legend.jpg){: width="85%" }
+![MRI with rainbow desaturated colormap]({{ page.root }}/fig/mri-colormap-legend.jpg){: width="95%" }
 
 As the render type *Volume* suggests, this is a full volumetric render of
 3D data. DICOM, incidentally, stands for *Digital Imaging and Communications
@@ -52,7 +52,7 @@ Let's suppose we want to get the horizontal dimensions of the head above the
 eyebrow. Firstly, we create a **Slice** filter, select **Y Normal**, then click
 **Apply**. 
 
-![MRI first slice]({{ page.root }}/fig/mri-first-slice.jpg){: width="85%" }
+![MRI first slice]({{ page.root }}/fig/mri-first-slice.jpg){: width="95%" }
 
 By clicking and dragging the red horizontal edge of the slice, we can move
 this to above the eyebrows of the head. Do this, and then:
@@ -63,11 +63,11 @@ to **mri-scan.pvd**.
 * Reorient the view to look down on the slice by clicking on the -Z axis
 icon in the toolbar.
 
-![Paraview minus Z axis]({{ page.root }}/fig/paraview-toolbar-minuszaxis.jpg){: width="65%" }
+![Paraview minus Z axis]({{ page.root }}/fig/paraview-toolbar-minuszaxis.jpg){: width="80%" }
 
 Zooming in a bit gives a clearer view in the main window.
 
-![MRI slice main view top down]({{ page.root }}/fig/mri-main-window-slice.jpg){: width="65%" }
+![MRI slice main view top down]({{ page.root }}/fig/mri-main-window-slice.jpg){: width="75%" }
 
 ## Measuring
 
@@ -78,7 +78,7 @@ to measure the cranium.
 Firstly, we make the view 2D. We do this by click on the *3D* button at
 the top of the main viewer window. 
 
-![Main viewer 3D button]({{ page.root }}/fig/mri-3D-button.jpg){: width="45%" }
+![Main viewer 3D button]({{ page.root }}/fig/mri-3D-button.jpg){: width="70%" }
 
 This will change the view to 2D, which makes our next tasks easier. You want
 to zoom in again at this point.
@@ -86,7 +86,7 @@ to zoom in again at this point.
 We want to measure the width of the cranium in the X direction. We can do
 this, and more, by adding a **Plot Over Line** filter.
 
-![Paraview line filter]({{ page.root }}/fig/mri-line-dialog.jpg){: width="55%" }
+![Paraview line filter]({{ page.root }}/fig/mri-line-dialog.jpg){: width="75%" }
 
 This will give us a matrix of values to enter the start and end points of the
 line.
@@ -96,7 +96,7 @@ be within the limits of the skull slice.
 * In particular, the z-coordinates should be just above the slice.
 * Click **Apply**.
 
-![MRI line source]({{ page.root }}/fig/mri-line-source.jpg){: width="85%" }
+![MRI line source]({{ page.root }}/fig/mri-line-source.jpg){: width="95%" }
 
 (You'll note a line graph has appeared on the right hand side. We'll get to
 this later.)
@@ -104,7 +104,7 @@ this later.)
 We're now going to move the ends of the line to the widest part of the skull.
 You will need to click **Apply** once you have done so.
 
-![MRI width profile]({{ page.root }}/fig/mri-width-profile.jpg){: width="85%" }
+![MRI width profile]({{ page.root }}/fig/mri-width-profile.jpg){: width="95%" }
 
 We can now see that under **Line Parameters** the width (here, length of line)
 is 135.803 units. But we can get more information than that.
@@ -119,12 +119,12 @@ of the line.
 This is data we can export for use elsewhere. First, we have to click on
 *PlotOverLine1* within the Pipeline browser.
 
-![MRI plot over line pipeline browser]({{ page.root }}/fig/mri-pipeline-browser.jpg){: width="35%" }
+![MRI plot over line pipeline browser]({{ page.root }}/fig/mri-pipeline-browser.jpg){: width="55%" }
 
 Then go into the **File** menu, and select **Save Data**. You'll see this
 dialog window:
 
-![MRI Save Data]({{ page.root }}/fig/mri-save-data.jpg){: width="45%" }
+![MRI Save Data]({{ page.root }}/fig/mri-save-data.jpg){: width="75%" }
 
 Notice that the file type is CSV. This is good: this is what we want. Once
 you have navigate to the directory you want to save in, enter your filename.
@@ -136,7 +136,7 @@ This will open another dialog. We don't need anything but the defauts, so click
 We now have a file we can use elsewhere. For instance, if you open it with
 Excel, you will see somethine like this -
 
-![MRI CSV in Excel]({{ page.root }}/fig/mri-csv-file.jpg){: width="45%" }
+![MRI CSV in Excel]({{ page.root }}/fig/mri-csv-file.jpg){: width="65%" }
 
 The column have been widened to see the column names. They are, in order:
 

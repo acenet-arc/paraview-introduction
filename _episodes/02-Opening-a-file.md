@@ -17,7 +17,7 @@ keypoints:
 > Paraview can be extremely demanding of your computer's memory, especially
 on large data sets.
 >
-> **Please close down any unnecessary any unnecessary programs** such as web browsers and office software before proceeding.
+> **Please close down any unnecessary any unnecessary programs** such as additional browser windows/tabs and office software before proceeding.
 > If you do not, Paraview may run very slowly.
 {: .caution}
 
@@ -35,7 +35,7 @@ folder, ie.
 
 Once started, you should see the Paraview application Window:
 
-![Paraview main window]({{ page.root }}/fig/paraview-main-window.jpg){: width="75%" }
+![Paraview main window]({{ page.root }}/fig/paraview-main-window.jpg){: width="100%" }
 
 The four main sections of the application window are highlighed above.
 
@@ -82,19 +82,20 @@ are at the top of the main Paraview window, above the toolbar.
 Paraview can import many types of data file formats. Here's a non-exhaustive
 list:
 
-![Paraview file formats]({{ page.root }}/fig/paraview-file-formats.jpg){: width="65%" }
+![Paraview file formats]({{ page.root }}/fig/paraview-file-formats.jpg){: width="95%" }
 
 <p> We are going to open one of the tutorial data files that you have unarchived onto your desktop. If we click on the *open file* icon&nbsp;<img src="{{ page.root }}/fig/paraview-open-file.jpg" height=18pt> </p>
 
 We get to the open file dialogue -
 
-![Open file dialogue]({{ page.root }}/fig/paraview-open-file-dialalogue.jpg){: width="70%" }
+![Open file dialogue]({{ page.root }}/fig/paraview-open-file-dialalogue.jpg){: width="80%" }
 
 Click on **Desktop**, then **acenet-paraview-tutorial**, then
 **disk_out_ref.ex2**. Click the **Apply** button, and you should now have
 a view similar to this.
 
-![First Paraview example, top view]({{ page.root }}/fig/paraview-ex0-firstview.jpg){: width="80%" }
+![First Paraview example, top view]({{ page.root }}/fig/paraview-ex0-firstview.jpg){: width="95%" }
+
 
 ## Information about the data file
 
@@ -109,6 +110,7 @@ beside them indicate they are enabled for processing.
 In the **Sets** sub-pane (you may need to scroll down with the mouse wheel)
 there are nodes and surface lists. If we deselect the block in **Block Arrays**
 we can select individual surfaces we would like to view.
+
 
 ## Manipulating the view
 
