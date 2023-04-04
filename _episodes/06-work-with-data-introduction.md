@@ -7,6 +7,9 @@ questions:
 objectives:
 - Extracting data from multidimensional data
 - Saving the data for external processing
+keypoints:
+- Paraview can work with other analysis tools by exporting data to file
+- These files can be in a variety of formats used by other software (eg. CSV)
 ---
 
 ## Introduction

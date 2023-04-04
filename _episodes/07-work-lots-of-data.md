@@ -6,6 +6,10 @@ questions:
 - "Running Paraview on HPC systems"
 objectives:
 - "Learn how Paraview works in client-server mode"
+keypoints:
+- Running Paraview in client/server mode allows remote visualization of large data sets.
+- The Paraview client connects to the Paraview server processes on the cluster.
+- The size of these datasets is only limited by server-side resources.
 ---
 
 
@@ -81,8 +85,7 @@ which will run for 3 hours and uses 40 cores.
 #SBATCH --ntasks=40
 #SBATCH --mem-per-cpu=2G
 #SBATCH --output=para-%j.out
-
-ncores=$SLURM_NTASKS
+#SBATCH --error=para-%j.err
 
 portnum=5002
 paraver=5.10.1
@@ -96,9 +99,7 @@ export LD_LIBRARY_PATH=$paradir/lib/paraview-$paraver:$LD_LIBRARY_PATH
 export PATH=$parabin:$PATH
 export PYTHONPATH=$paradir/lib/paraview-$paraver/site-packages:$PYTHONPATH
 
-mpiprog=$parabin/mpiexec
-
-$mpiprog -np $ncores $parabin/pvserver --force-offscreen-rendering --server-port=$portnum
+srun $parabin/pvserver --force-offscreen-rendering --server-port=$portnum
 
 echo "Paraview finished."
 ~~~
@@ -107,7 +108,7 @@ echo "Paraview finished."
 > ## To adapt the Slurm script to your own cluster:
 > 
 > - In this case, we have installed Paraview under **$HOME/local/paraview/ParaView-5.10.1-osmesa-MPI-Linux-Python3.9-x86_64**. You may want to change
-**paradir** so if you install to another directory.
+**paradir** if you install to another directory.
 > - Change **paraver** to match the version you use.
 > - If 40 cores are insufficient, you may need to change **ntasks** to something larger.
 > - If you are not using Slurm as a scheduler, you will need to change the
@@ -131,11 +132,11 @@ job number. If we then run
 Then we can see if it is running. A message similar to this should appear:
 ~~~
           JOBID     USER      ACCOUNT           NAME  ST  TIME_LEFT NODES CPUS TRES_PER_N MIN_MEM NODELIST (REASON) 
-         431486  my_user        staff       paraview   R    2:59:58     1   40        N/A    256M cl005 (None) 
+         431486  my_user        staff       paraview   R    2:59:58     1   40        N/A      2G cl005 (None) 
 ~~~
 {: .source}
 
-This tells me that paraview is running (the 'R' under State, or ST), and that
+This tells us that Oaraview is running (the 'R' under State, or ST), and that
 I am using 1 node. The node here is given as **cl005**. This should be noted
 down, as it will be required in a moment.
 
