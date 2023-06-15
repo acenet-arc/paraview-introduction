@@ -39,7 +39,7 @@ should see something similar to this.
 
 As the render type *Volume* suggests, this is a full volumetric render of
 3D data. DICOM, incidentally, stands for *Digital Imaging and Communications
-in Medicine*, and is a standard for storing and tranmitting medical images.
+in Medicine*, and is a standard for storing and transmitting medical images.
 More can be found on DICOM at the
 <a href="https://www.dicomlibrary.com/">DICOM Library</a>. For now though,
 we'll treat the *DICOMImage* field in Paraview as a measure of object density.
@@ -52,7 +52,7 @@ support DICOM image sets. That said, we can still get useful information out
 of them. This we will do now.
 
 Let's suppose we want to get the horizontal dimensions of the head above the
-eyebrow. Firstly, we create a **Slice** filter, select **Y Normal**, then click
+eyebrow. Firstly, we create a **Slice** filter, select **Z Normal**, then click
 **Apply**. 
 
 ![MRI first slice]({{ page.root }}/fig/mri-first-slice.jpg){: width="95%" }

@@ -19,7 +19,7 @@ keypoints:
 >
 > You are not expected to recreate
 > the tasks below during the lesson (unless you have a cluster handy).
-> These have been tested on an Ace-net cluster, and may need adaptation
+> These have been tested on an ACENET cluster, and may need adaptation
 > to work on other clusters. If you are technically-inclined, by all means
 > do so; otherwise contact your system administrator.
 {: .callout}

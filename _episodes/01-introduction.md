@@ -68,10 +68,10 @@ application such as MatLab or a Python program.
 
 ## Sources
 
-Sources in Paraview are sources of data, which can be operated on using
-using filters. This can be a file, or any item in the *Sources* menu, such as
+Sources in Paraview are sources of data, which can be operated on 
+by filters. This can be a file, or any item in the *Sources* menu, such as
 text, shapes, point or line sources. Some filters can combine sources
-together.This can be particularly useful in when restructuring data onto
+together. This can be particularly useful in when restructuring data onto
 different grids, for example.
 
 
@@ -87,9 +87,9 @@ grid shown below.
 
 ![Rectilinear uniform grid]({{ page.root }}/fig/grid-uniform-rectinlinear.jpg){: width="35%" }
 
-Or fitted using a cylindrical coordinate, as shown with the curvlinear
+Or fitted using a cylindrical coordinate, as shown with the curvilinear
 structured grid below. Such a grid would typically be used to model a regular,
-tubular-sized domain (eg. flow through a pipe).
+tubular domain (eg. flow through a pipe).
 
 ![Curvilinear structured grid]({{ page.root }}/fig/grid-structured-curvilinear.jpg){: width="35%" }
 
