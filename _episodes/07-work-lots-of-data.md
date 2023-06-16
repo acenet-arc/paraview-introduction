@@ -136,7 +136,7 @@ Then we can see if it is running. A message similar to this should appear:
 ~~~
 {: .source}
 
-This tells us that Oaraview is running (the 'R' under State, or ST), and that
+This tells us that Paraview is running (the 'R' under State, or ST), and that
 I am using 1 node. The node here is given as **cl005**. This should be noted
 down, as it will be required in a moment.
 
